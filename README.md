@@ -34,9 +34,26 @@
 Сначала клонируйте репозиторий с кодом на ваш локальный компьютер:
 
 ```bash
-git clone https://github.com/yourusername/parsing_project.git
+git clone https://github.com/Hanger12/LoadToJson.git
+cd LoadToJson
 ```
-### Шаг 2: Установка зависимостей
+### Шаг 2: Создание и активация виртуального окружения
+
+Создайте виртуальное окружение для установки зависимостей, чтобы изолировать их от глобальной системы:
+```bash
+python -m venv .venv
+```
+
+Активация на Windows:
+```bash
+.venv\Scripts\activate
+```
+
+Активация на MacOS и Linux:
+```bash
+source venv/bin/activate
+```
+### Шаг 3: Установка зависимостей
 
 Для установки зависимостей выполните следующую команду:
 
@@ -44,10 +61,10 @@ git clone https://github.com/yourusername/parsing_project.git
 pip install -r requirements.txt
 ```
 
-### Шаг 3: Запуск Парсера.
+### Шаг 4: Запуск Парсера.
 Для запуска парсера выполните следующую команду:
 ```bash
 python parser.py
 ```
-### Шаг 4: Просмотр результата.
-С парсенные данные будут храниться в файле `collected_data.json`
+### Шаг 5: Просмотр результата.
+Собранные данные сохраняются в файл `collected_data.json` в корневой папке проекта.
