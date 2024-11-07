@@ -1,0 +1,10 @@
+output_file: "collected_data.json"
+sites:
+  - url: "https://quotes.toscrape.com"
+    base_url: "https://quotes.toscrape.com"
+    parsing_rules:
+      quote_block: ".quote"
+      quote: ".text"
+      author: ".author"
+      tags: ".tag"
+    next_page_selector: ".next a"
